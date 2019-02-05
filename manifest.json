@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Language Fixer",
+  "version": "1.0.0",
+  "description": "Make words in right language.",
+  "icons": {
+    "48": "icon.jpg"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"]
+    }
+  ]
+}
