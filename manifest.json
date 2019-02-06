@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Make words in right language.",
   "icons": {
-    "48": "icon.jpg"
+    "12": "icon12.png",
+    "48": "icon48.png"
   },
   
   "content_scripts": [
@@ -12,5 +13,12 @@
       "matches": ["<all_urls>"],
       "js": ["index.js"]
     }
+  ],
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "index.js"
   ]
 }
